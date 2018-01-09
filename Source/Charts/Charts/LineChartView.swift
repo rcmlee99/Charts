@@ -13,7 +13,7 @@ import Foundation
 import CoreGraphics
 
 /// Chart that draws lines, surfaces, circles, ...
-open class LineChartView: BarLineChartViewBase, LineChartDataProvider
+@objc open class LineChartView: BarLineChartViewBase, LineChartDataProvider
 {
     internal override func initialize()
     {
@@ -26,3 +26,4 @@ open class LineChartView: BarLineChartViewBase, LineChartDataProvider
     
     open var lineData: LineChartData? { return _data as? LineChartData }
 }
+
